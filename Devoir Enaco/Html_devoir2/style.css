@@ -1,0 +1,309 @@
+/* ========================================
+   RESET & BASE
+======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #424242;
+  color: #222;
+}
+
+/* ========================================
+   HEADER & NAVIGATION
+======================================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #424242;
+  padding: 15px 25px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.logo span {
+  color: #ffd900;
+}
+
+.subscribe-btn {
+  background-color: #ffd900;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+}
+
+/* Effet au survol uniquement */
+.nav a:hover {
+  background-color: #ffd900;
+  color: #000;
+}
+
+/* Catégorie sélectionnée */
+.nav a.active {
+  background-color: #ffd900;
+  color: #000;
+  font-weight: bold;
+}
+
+/* ========================================
+   PAGE ACCUEIL - Section abonnés
+======================================== */
+.premium-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.date-box, .time-box, .premium-box {
+  background-color: #fff7b2;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.time-box span {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+/* ========================================
+   PAGE ACCUEIL - Grille d'articles
+======================================== */
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card .category {
+  font-size: 0.9rem;
+  margin: 8px 12px 0;
+  font-weight: bold;
+}
+
+.card h3 {
+  margin: 5px 12px 12px;
+  font-size: 1rem;
+}
+
+/* Bloc réservé */
+.reserved {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff7b2;
+}
+
+.reserved-box {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Couleurs des catégories */
+.entreprise { color: #58a35c; }
+.tech { color: #3b82f6; }
+.eco { color: #f59e0b; }
+.geo { color: #d32f2f; }
+
+/* ========================================
+   PAGE DÉTAIL - Article complet
+======================================== */
+.article-detail {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.article-container {
+  background-color: #fff;
+  border-radius: 15px;
+  max-width: 800px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.article-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.article-header {
+  padding: 20px 30px 10px;
+}
+
+.article-header .category {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.article-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.article-content {
+  padding: 10px 30px 20px;
+  line-height: 1.6;
+}
+
+.article-content p {
+  margin-bottom: 15px;
+}
+
+.article-footer {
+  padding: 0 30px 30px;
+  text-align: center;
+}
+
+.about-btn {
+  background-color: #ffd900;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.about-btn:hover {
+  background-color: #e6c300;
+}
+
+/* ========================================
+   PAGE À PROPOS
+======================================== */
+.about-page {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.about-container {
+  background-color: #fff;
+  border-radius: 15px;
+  max-width: 800px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.about-title {
+  background-color: #ffd900;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.about-title h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.about-content {
+  padding: 20px 30px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+}
+
+.about-footer {
+  padding: 0 30px 30px;
+  text-align: center;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+@media (max-width: 992px) {
+  .articles { grid-template-columns: repeat(2, 1fr); }
+  .article-container, .about-container { max-width: 90%; }
+  .article-header h1, .about-title h1 { font-size: 1.6rem; }
+}
+
+@media (max-width: 600px) {
+  .header { flex-direction: column; gap: 10px; }
+  .articles { grid-template-columns: 1fr; }
+  .premium-section { flex-direction: column; }
+  .article-container, .about-container { border-radius: 10px; }
+  .article-image img, .about-image img { height: 200px; }
+  .article-header, .about-title { padding: 15px 20px; }
+  .article-header h1, .about-title h1 { font-size: 1.4rem; }
+  .article-content, .about-content { padding: 15px 20px; }
+  .about-btn { width: 100%; }
+}
