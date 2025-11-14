@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC News - Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER + NAV -->
+  <header class="header">
+    <div class="logo"><a href="index.html" class="active">ABC <span>News</span></a></div>
+
+    <button id="userButton" class="subscribe-btn">Se connecter</button>
+  </header>
+  <nav class="nav">
+    <ul>
+      <li><a href="index.html" class="active">À la Une</a></li>
+      <li><a href="#">Stories</a></li>
+      <li><a href="#">Guerre Israël-Hamas</a></li>
+      <li><a href="#">Géopolitique</a></li>
+      <li><a href="#">Économie</a></li>
+      <li><a href="#">Monde</a></li>
+      <li><a href="#">Technologies</a></li>
+      <li><a href="#">Entreprise</a></li>
+    </ul>
+  </nav>
+
+  <!-- BONJOUR X -->
+  <section class="interaction">
+    <div class="welcome-box">
+      <p id="welcomeMessage">Bonjour</p>
+    </div>
+  </section>
+
+
+  <!-- WRAPPER POUR POUSSER LE FOOTER EN BAS -->
+  <div class="content-wrapper">
+    <!-- SECTION ABONNÉS -->
+    <section class="premium-section">
+      <div class="date-box">
+        <p>09/05/2025</p>
+      </div>
+      <div class="time-box">
+        <p>Heure de Paris</p>
+        <span>07h35</span>
+      </div>
+      <div class="premium-box">
+        <p>Réservé aux abonnés</p>
+      </div>
+    </section>
+    <!-- GRILLE D'ARTICLES -->
+    <main class="articles">
+      <article class="card">
+        <img src="../BHV.jpg" alt="Image du BHV">
+        <p class="category entreprise">Entreprise</p>
+        <h3>Coup dur pour BHV</h3>
+      </article>
+      <article class="card">
+        <img src="../Extension.jpg" alt="Extension de maison en bois">
+        <p class="category tech">Technologies</p>
+        <h3>Les extensions ont...</h3>
+      </article>
+      <article class="card">
+        <img src="../Chronodrive.jpg" alt="Image de logo Chronodrive et Amazon">
+        <p class="category eco">Économie</p>
+        <h3>Chronodrive feat Amazon</h3>
+      </article>
+      <article class="card">
+        <img src="../AssembleeNat.jpg" alt="image de l'Assemblee Nationale">
+        <p class="category geo">Géopolitique</p>
+        <h3>Fiasco à l'Assemblée</h3>
+      </article>
+      <article class="card">
+        <img src="../Darquer&Mery.jpg" alt="Image de Darquer&Méry">
+        <p class="category entreprise">Entreprise</p>
+        <h3>La Dentelle de Calais en danger</h3>
+      </article>
+      <article class="card reserved">
+        <div class="reserved-box">
+          <p>09/05/2025</p>
+          <span>Réservé aux abonnés</span>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 ABC News - Tous droits réservés</p>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
